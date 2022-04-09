@@ -1,11 +1,11 @@
-import Main from "./components/Main";
-import Page from "./components/Page";
+import Home from "./components/Home";
+import Conteudo from "./components/Conteudo";
 
 export default function App(){
   return(
     <>
-      <Main/>
-      <Page/>
+      <Home/>
+      <Conteudo/>
     </>
   )
 }

@@ -32,9 +32,9 @@ export default function Main(){
 
                 <div className='menu-desktop'>
                     <ul>
-                        <li> <a href='#'> about me </a> </li>
-                        <li> <a href='#'> projects </a> </li>
-                        <li> <a href='#'> Website Source Code  </a> </li>
+                        <li> <a href='#'> Sobre </a> </li>
+                        <li> <a href='#'> projetos </a> </li>
+                        <li> <a target="_blank" href='https://github.com/charleeslemes/PortfolioReact'> Código do site </a> </li>
                     </ul>
 
                 </div>
@@ -45,9 +45,9 @@ export default function Main(){
                     <div className='modalMenuMobile'>
                    <div onClick={fecharModalMobile}><FaTimes/></div> 
                     <ul>
-                        <li> <a href='#'> about me </a> </li>
-                        <li> <a href='#'> projects </a> </li>
-                        <li> <a href='#'> Website Source Code  </a> </li>
+                        <li> <a href='#'> Sobre </a> </li>
+                        <li> <a href='#'> projetos </a> </li>
+                        <li> <a href='#'> Código do site </a> </li>
                     </ul>
                     </div>
                 </div>
@@ -62,9 +62,9 @@ export default function Main(){
             <p>Desenvolvedor Fron-end</p>
 
             <ul>
-                <li><a href='#'><FaGithub /></a></li>
-                <li><a href='#'><FaLinkedin /></a></li>
-                <li><a href='#'><FaInstagram /></a></li>
+                <li><a target="_blank" href='https://github.com/charleeslemes'><FaGithub /></a></li>
+                <li><a target="_blank" href='https://www.linkedin.com/in/charles-lemes-96a2a4211/'><FaLinkedin /></a></li>
+                <li><a target="_blank" href='https://www.instagram.com/charleeslemes/'><FaInstagram /></a></li>
             </ul>
 
             </div>{/* bio1 */}
