@@ -451,8 +451,8 @@ export default function Page(){
         <footer>
         <div className='containerFooter'>
             <div className='redesSociais'>
-                <FaLinkedin/>
-                <FaGithub/>
+                <a target="_blank" href='https://www.linkedin.com/in/charles-lemes-96a2a4211/'><FaLinkedin/></a>
+                <a target="_blank" href='https://github.com/charleeslemes'><FaGithub/></a> 
             </div>
 
             <div className='menu'>
