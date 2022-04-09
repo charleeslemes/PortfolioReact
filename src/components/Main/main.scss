@@ -1,0 +1,260 @@
+
+@mixin  displayFlex ($justify_content, $direction) {
+    display: flex;
+    justify-content: $justify_content;
+    flex-direction: $direction;
+    align-items: center
+}
+
+$backgroundOpacity: rgba(0,00,0, 0.6);;
+
+
+.main{
+    background-image: url(../../assets/background-main.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    
+    position: relative;
+
+    header{
+        padding: 10px 0;
+        background: $backgroundOpacity;
+        @include displayFlex(space-around, row );
+
+        @media screen and (max-width: 768px){
+            
+        }
+
+        .logo h2{
+            color:white;
+            font-size: 35px;
+            font-weight: normal;
+        }
+
+        .menu-desktop{
+
+            
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+           
+         ul{
+            @include displayFlex(space-between, row );
+
+            li{
+                padding: 5px 15px;
+                list-style: none;
+
+                a{
+                    color:white;
+                    text-decoration: none;
+                    font-size: 22px;
+                    padding: 7px 0;
+                    position: relative;
+                   
+                }/*fechando da tag a*/
+
+
+                a::after{
+                    content: " ";
+                    width: 0%;
+                    height: 4px;
+                    background-color: white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+        
+                    transition: 0.5s ease-in-out;
+                }
+
+                a:hover::after{
+                    width: 100%;
+                }
+
+
+            }/*fechando da tag li*/
+
+         }/*fechamento da tag ul*/
+
+        }/*fechanmento da class menu-desktop*/
+
+
+        .menu-mobile{
+            display: none;
+
+            @media screen and (max-width: 768px){
+                display: block;
+            }
+            
+            icon-menu{
+                cursor: pointer;
+            }
+
+            svg{
+                color:white;
+                font-size: 35px;
+                cursor: pointer;
+            }
+
+            .modalMenuMobile{
+                z-index: 99;
+                width: 60%;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+               
+                background-color: rgba(105, 105, 105, 0.973);
+                transition: 0.9s all;
+                display: none;
+
+                svg{
+                    position: absolute;
+                    top: 15px;
+                    right: 25px;
+                    font-size: 50px;
+                    cursor: pointer;
+                
+                }
+
+                ul{
+                   
+                    position: absolute;
+                    top: 30%;
+                    right: 30%;
+                }
+
+                li{
+                    margin-bottom: 15px;
+                    list-style: none;
+                    padding: 5px 25px;
+
+                    a{
+                        color:white;
+                        text-decoration: none;
+                        font-size: 32px;
+                       
+                    }
+                   
+                }
+
+            }
+
+
+        }
+
+        
+    }/*fechamento do header*/
+
+
+    .bio1{
+        @include displayFlex(center, column );
+        background: $backgroundOpacity;
+        max-width: 500px;
+        margin: 5% auto 0 auto;
+        border-radius: 10px;
+        padding: 15px;
+
+        @media screen and (max-width: 768px){
+            max-width: 450px;
+        }
+
+        @media screen and (max-width: 499px){
+            margin-top: 100px;
+            max-width: 400px;
+        }
+
+        
+        
+
+        .img-autor{
+            background-image: url('../../assets/foto-autor.jpeg');
+            background-position: center;
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            border-radius:50%;
+            border: 4px solid white;
+
+            @media screen and (max-width: 768px){
+               width: 170px;
+               height: 170px;
+            }
+    
+
+        }
+
+        h1{
+            margin-top: 15px;
+            color: white;
+            font-weight: normal;
+            font-size: 36px;
+        }
+
+        p{
+            color:white;
+            font-size: 25px;
+        }
+
+
+        ul{
+           margin-top: 15px;
+            @include displayFlex(space-between,row );
+
+        }
+
+        li{
+            padding: 3px 15px;
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        svg{
+            color:white;
+            font-size: 30px;
+            transition: .3s all;
+
+            &:hover{
+                color:blueviolet;
+            }
+        }
+
+        
+    }
+
+
+    .seta{
+        background-image: url('../../assets/setaBaixo.png');
+        background-position: center;
+        background-size: cover;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        animation: setaEffect 1s infinite alternate;
+    }
+
+
+    @keyframes setaEffect{
+        0%{
+            bottom:10px;
+        }
+
+        100%{
+            bottom:-5px;
+           
+        }
+
+    }
+
+ 
+
+}
+

@@ -1,0 +1,256 @@
+$backgroundOpacity: rgba(0,0,0, 0.6);;
+
+
+
+@mixin center ($justify) {
+    display: flex;
+    margin: 0 auto;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin backgroundTitle {
+    @include center(center);
+    background-image: url('../../assets/background-main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+@mixin title {
+    background-color:$backgroundOpacity ;
+    color:white;
+    font-size: 40px;
+    padding: 5px 35px;
+    border-radius:10px;
+}
+
+section.aboute{
+   
+    @include center(center);
+    margin: 0 auto;
+    max-width: 1100px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .btnSobre{
+        width: 20%;
+        margin-right: 35px;
+        @include center(center);
+        flex-direction: column;
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-right: 0;
+            margin: 0 auto;
+           
+        }
+
+        .mim{
+            background-color: rgba(0,0,0,0.9) ;
+            box-shadow: inset 0 0 5px rgb(209, 208, 208);
+        }
+
+        button{
+            border:0;
+            font-size: 26px;
+            cursor: pointer;
+            background-color: $backgroundOpacity;
+            border-radius: 10px;
+            margin-top: 10px;
+
+            @media screen and (max-width: 768px){
+                margin: 10px 25px;
+            }
+    
+            svg{
+                color: white;
+                font-size: 70px;
+                padding: 10px;
+            }
+            
+        }
+
+    }
+
+
+    .textSobre{
+        padding: 10px 5px;
+        width: 80%;
+        height: 250px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #2427724d;
+        margin-right: 2%;
+
+        @media screen and (max-width: 768px){
+            margin: 20px auto;
+            width: 100%;
+            padding: 0 2%;
+            height: 330px;
+        }
+
+       
+        svg{
+                
+            color: #444444;
+            font-size: 20px;
+            @include center(center);
+            margin: 3px auto;
+
+        }        
+              
+        .textSobreSite{
+            display: none;
+   
+   
+        }
+
+        h2{
+            text-align: center;
+            font-size: 28px;
+        }
+
+        p{
+            color:#7e92ac;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 18px;
+         }
+
+    }
+
+}
+
+
+.title{
+    @include backgroundTitle();
+
+        h1{
+            @include title();
+        }
+}
+
+
+section.tech{
+    margin: 38px auto;
+    padding: 10px;
+    max-width: 1280px;
+
+    .containerTech{
+        @include center(center);
+        flex-wrap: wrap;
+        width: 100%;
+
+        .tech-single{
+            width: calc(100% / 6);
+            @include center(center);
+            flex-direction: column;
+
+            @media screen and (max-width: 768px ){
+                width: calc(100% / 3);
+            }
+
+             img{
+                width: 100px;
+                height: 100px;
+               
+            }
+
+            h5{
+                font-size: 16px;
+            }
+            
+        }
+        
+    
+    }
+
+}
+
+
+
+section.diferenciais{
+margin-top: 60px;
+margin-bottom: 100px;
+    .container-diferenciais{
+        @include center(center);
+        max-width: 1200px;
+        width: 100%;
+
+        @media screen and (max-width: 1000px){
+            
+            flex-direction: column;
+        }
+
+        .box-single{
+            width: calc(100% / 3);
+            box-shadow: 0px 10px 40px #2427724d;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 8px;
+            height: 250px;
+
+            @media screen and (max-width: 1000px){
+                margin-bottom: 8px;
+                width: 70%;
+
+            }
+
+            @media screen and (max-width: 768px){
+                margin-bottom: 8px;
+                width: 95%;
+
+            }
+
+            img{
+                width: 60px;
+                height: 60px;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            .textDif{
+                margin-top: 15px;
+                padding: 0 18px;
+                text-align: left;
+                margin-bottom: 15px;
+
+               
+    
+
+                p{
+                    color:#7e92ac;
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+
+        .box-single:nth-last-of-type(2){
+            position: relative;
+            top: -33px;
+
+            @media screen and (max-width: 1000px){
+                top: 0;
+            }
+        }
+    }
+
+}
+
+
+
+
+
