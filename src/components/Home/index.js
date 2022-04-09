@@ -47,7 +47,7 @@ export default function Main(){
                     <ul>
                         <li> <a href='#'> Sobre </a> </li>
                         <li> <a href='#'> projetos </a> </li>
-                        <li> <a href='#'> Código do site </a> </li>
+                        <li> <a target="_blank" href='https://github.com/charleeslemes/PortfolioReact'> Código do site </a> </li>
                     </ul>
                     </div>
                 </div>

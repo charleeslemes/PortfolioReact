@@ -15,7 +15,7 @@ import appTarefas from '../../assets/projeto-appTarefas.jpg'
 import pokedex from '../../assets/projeto-pokedex.jpg';
 import telaLogin from '../../assets/projeto-telaLogin.jpg';
 import cronometro from '../../assets/projeto-cronometro.jpg';
-import galeriaFilmes from '../../assets/projeto-galeriaFilmes.jpg';
+import galeriaFilmes from '../../assets/projeto-galeriaFilmes1.jpg';
 import repos from '../../assets/projeto-repositorios.jpg';
 import telaLogin02 from '../../assets/projeto-telaLogin02.jpg';
 import landingPage from '../../assets/projeto-landingPage.jpg';
@@ -80,7 +80,7 @@ export default function Page(){
      
        setTitleText("Sobre o Site");
 
-       setTextSobre("Na construção desse site passei varias dificuldade mas é com elas que se aprende né, sempre pesquisando como eu poderia melhorar cada vez mais, construi esse site usando <strong> React js </strong> e usei o <strong> Sass </strong> para estilização do site, comecei usar o Sass nesse site mesmo.");
+       setTextSobre("Na construção deste site passei por várias dificuldades e ideias, mas sempre pesquisando como eu poderias melhorá-lo e deixando mais minha cara e sempre priorizando o design responsivo, foram vários testes para deixar 100% responsivo");
 
        setIcon(<FaDesktop/>);
 
@@ -102,7 +102,7 @@ export default function Page(){
             <h2>{titleText}</h2>
             
          <p className='textSobreMim'>{textSobre}</p>
-         <p className='textSobreSite'>{textSobre}</p>
+         <p className='textSobreSite'>{textSobre} <br/> <br/> <span>React</span> <span>Sass</span></p>
 
         </div>
           
@@ -211,7 +211,7 @@ export default function Page(){
 
             <div  className='containerProjetos'>
 
-                <div className='projetoSingle' >
+                <div className='projetoSingle' data-aos="fade-right" >
                     <div style={{backgroundImage: `url(${geradorSenha})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -235,7 +235,7 @@ export default function Page(){
                 </div>
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
                     <div style={{backgroundImage: `url(${appTarefas})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -260,7 +260,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' >
+                <div className='projetoSingle' data-aos="fade-right" >
                     <div style={{backgroundImage: `url(${pokedex})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -285,7 +285,7 @@ export default function Page(){
 
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
                     <div style={{backgroundImage: `url(${telaLogin})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -312,7 +312,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' >
+                <div className='projetoSingle' data-aos="fade-right" >
                     <div style={{backgroundImage: `url(${cronometro})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -337,7 +337,7 @@ export default function Page(){
 
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
                     <div style={{backgroundImage: `url(${galeriaFilmes})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -365,7 +365,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' >
+                <div className='projetoSingle' data-aos="fade-right" >
                     <div style={{backgroundImage: `url(${repos})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -391,7 +391,7 @@ export default function Page(){
 
 
                 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
                     <div style={{backgroundImage: `url(${telaLogin02})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -418,7 +418,7 @@ export default function Page(){
                 </div>
 
 
-                <div className='projetoSingle' >
+                <div className='projetoSingle' data-aos="fade-right" >
                     <div style={{backgroundImage: `url(${landingPage})`}}  className='img'></div>
 
                     <div  className='conteudo'>

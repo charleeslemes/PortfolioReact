@@ -105,6 +105,15 @@ section.aboute .textSobre {
   }
 }
 
+@media screen and (max-width: 768px) {
+  section.aboute .textSobre {
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 2%;
+    height: 400px;
+  }
+}
+
 section.aboute .textSobre svg {
   color: #444444;
   font-size: 20px;
@@ -135,6 +144,15 @@ section.aboute .textSobre p {
   margin: 15px 0;
   text-align: center;
   font-size: 18px;
+}
+
+section.aboute .textSobre p span {
+  padding: 4px 15px;
+  background-color: #444444;
+  margin-right: 8px;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .title {
@@ -202,6 +220,7 @@ section.tech .containerTech .tech-single {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -307,7 +326,7 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
 .containerProjetos {
   width: 100%;
   margin: 40px auto;
-  max-width: 1280px;
+  max-width: 1230px;
   padding: 0 3%;
 }
 
@@ -377,6 +396,13 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .containerProjetos .projetoSingle .conteudo {
+    width: 85%;
+    max-width: 800px;
+  }
+}
+
 .containerProjetos .projetoSingle .conteudo h2 {
   margin: 20px;
   text-align: center;
@@ -408,6 +434,7 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
   padding: 4px 15px;
   background-color: #444444;
   margin-right: 8px;
+  text-align: center;
   margin-top: 10px;
   border-radius: 10px;
   color: white;
