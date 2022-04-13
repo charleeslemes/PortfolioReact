@@ -124,8 +124,8 @@
 
 .main header .menu-mobile .modalMenuMobile svg {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 8px;
+  right: 55px;
   font-size: 50px;
   cursor: pointer;
 }
@@ -245,7 +245,7 @@
 }
 
 .main .bio1 svg:hover {
-  color: blueviolet;
+  color: #444444;
 }
 
 .main .seta {

@@ -90,6 +90,8 @@ export default function Page(){
 
     return(
         <>
+
+    <a name="sobre"></a>
     <section className='aboute' data-aos="fade-right">
          
          <div className='btnSobre'>
@@ -167,7 +169,7 @@ export default function Page(){
         <section className='diferenciais'>
             <div className='container-diferenciais'>
 
-                <div className='box-single'  data-aos="fade-down">
+                <div className='box-single' data-aos="fade-down">
                     <img src={tag}/>
 
                     <h2>Design responsivo</h2>
@@ -201,8 +203,8 @@ export default function Page(){
 
             </div>
         </section>
-
-
+        <a name="projetos"></a>
+        
         <section className='projetos'>
 
         <div className='title'>
@@ -211,7 +213,7 @@ export default function Page(){
 
             <div  className='containerProjetos'>
 
-                <div className='projetoSingle' data-aos="fade-right" >
+                <div className='projetoSingle' data-aos="fade-down" >
                     <div style={{backgroundImage: `url(${geradorSenha})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -235,7 +237,7 @@ export default function Page(){
                 </div>
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${appTarefas})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -260,7 +262,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' data-aos="fade-right" >
+                <div className='projetoSingle' data-aos="fade-down" >
                     <div style={{backgroundImage: `url(${pokedex})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -285,7 +287,7 @@ export default function Page(){
 
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${telaLogin})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -312,7 +314,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' data-aos="fade-right" >
+                <div className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${cronometro})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -337,7 +339,7 @@ export default function Page(){
 
 
 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${galeriaFilmes})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -365,7 +367,7 @@ export default function Page(){
 
 
 
-                <div className='projetoSingle' data-aos="fade-right" >
+                <div className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${repos})`}}  className='img'></div>
 
                     <div  className='conteudo'>
@@ -391,7 +393,7 @@ export default function Page(){
 
 
                 
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-left" >
+                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
                     <div style={{backgroundImage: `url(${telaLogin02})`}} className='img'></div>
 
                     <div className='conteudo'>
@@ -418,7 +420,7 @@ export default function Page(){
                 </div>
 
 
-                <div className='projetoSingle' data-aos="fade-right" >
+                <div className='projetoSingle' data-aos="fade-down" >
                     <div style={{backgroundImage: `url(${landingPage})`}}  className='img'></div>
 
                     <div  className='conteudo'>

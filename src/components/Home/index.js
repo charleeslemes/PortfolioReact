@@ -1,5 +1,5 @@
 import './main.css';
-import { FaGithub, FaInstagram, FaLinkedin, FaBars, FaTimes} from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaBars, FaTimes, FaUser, FaDesktop, FaCode } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -32,8 +32,8 @@ export default function Main(){
 
                 <div className='menu-desktop'>
                     <ul>
-                        <li> <a href='#'> Sobre </a> </li>
-                        <li> <a href='#'> projetos </a> </li>
+                        <li> <a href='#sobre'> Sobre </a> </li>
+                        <li> <a href='#projetos'> projetos </a> </li>
                         <li> <a target="_blank" href='https://github.com/charleeslemes/PortfolioReact'> Código do site </a> </li>
                     </ul>
 
@@ -45,10 +45,13 @@ export default function Main(){
                     <div className='modalMenuMobile'>
                    <div onClick={fecharModalMobile}><FaTimes/></div> 
                     <ul>
-                        <li> <a href='#'> Sobre </a> </li>
-                        <li> <a href='#'> projetos </a> </li>
+                        <li> <a href='#sobre'>  Sobre  </a> </li>
+                        <li> <a href='#projetos'> projetos </a> </li>
                         <li> <a target="_blank" href='https://github.com/charleeslemes/PortfolioReact'> Código do site </a> </li>
+
+                        
                     </ul>
+                    
                     </div>
                 </div>
 
@@ -66,6 +69,8 @@ export default function Main(){
                 <li><a target="_blank" href='https://www.linkedin.com/in/charles-lemes-96a2a4211/'><FaLinkedin /></a></li>
                 <li><a target="_blank" href='https://www.instagram.com/charleeslemes/'><FaInstagram /></a></li>
             </ul>
+
+           
 
             </div>{/* bio1 */}
 

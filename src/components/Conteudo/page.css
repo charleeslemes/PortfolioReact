@@ -101,15 +101,24 @@ section.aboute .textSobre {
     margin: 20px auto;
     width: 100%;
     padding: 0 2%;
-    height: 330px;
+    height: 270px;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.aboute .textSobre {
-    margin: 20px auto;
-    width: 100%;
-    padding: 0 2%;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  section.aboute .textSobre {
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  section.aboute .textSobre {
     height: 400px;
   }
 }

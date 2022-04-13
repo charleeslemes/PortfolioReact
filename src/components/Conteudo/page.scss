@@ -95,13 +95,18 @@ section.aboute{
             margin: 20px auto;
             width: 100%;
             padding: 0 2%;
-            height: 330px;
+            height: 270px;
         }
 
         @media screen and (max-width: 768px){
-            margin: 20px auto;
-            width: 100%;
-            padding: 0 2%;
+            height: 310px;
+        }
+
+        @media screen and (max-width: 510px){
+            height: 370px;
+        }
+
+        @media screen and (max-width: 410px){
             height: 400px;
         }
 
