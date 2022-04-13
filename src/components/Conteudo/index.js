@@ -34,7 +34,7 @@ export default function Page(){
 
     const [icon, setIcon] = useState(<FaUser/>);
 
-    const [textSobre, setTextSobre] = useState("Sou apaixonado por tecnologia, quando eu era criança sempre gostei muito de mexer com computador e sempre tive curiosidade de saber como eram feito os sites, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
+    const [textSobre, setTextSobre] = useState("Sou apaixonado por tecnologia, criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
 
     function abrirSobreMim(){
         let sobreMim = document.querySelector('.textSobreMim');
@@ -54,7 +54,7 @@ export default function Page(){
 
         setTitleText("Sobre Mim");
 
-        setTextSobre("Sou apaixonado por tecnologia, quando eu era criança sempre gostei muito de mexer com computador e sempre tive curiosidade de saber como eram feito os sites, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
+        setTextSobre("Sou apaixonado por tecnologia, criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
 
 
         setIcon(<FaUser/>);
