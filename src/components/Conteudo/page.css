@@ -113,13 +113,13 @@ section.aboute .textSobre {
 
 @media screen and (max-width: 510px) {
   section.aboute .textSobre {
-    height: 370px;
+    height: 390px;
   }
 }
 
 @media screen and (max-width: 410px) {
   section.aboute .textSobre {
-    height: 400px;
+    height: 430px;
   }
 }
 
