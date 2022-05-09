@@ -85,10 +85,15 @@ section.aboute .btnSobre button svg {
   padding: 10px;
 }
 
+section.aboute .btnSobre button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 section.aboute .textSobre {
   padding: 10px 5px;
   width: 80%;
-  height: 250px;
+  height: 270px;
   margin: 20px 0;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 20px #2427724d;
@@ -96,30 +101,17 @@ section.aboute .textSobre {
   margin-right: 2%;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 920px) {
   section.aboute .textSobre {
-    margin: 20px auto;
-    width: 100%;
-    padding: 0 2%;
-    height: 270px;
+    height: 330px;
   }
 }
 
 @media screen and (max-width: 768px) {
   section.aboute .textSobre {
-    height: 310px;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  section.aboute .textSobre {
-    height: 390px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  section.aboute .textSobre {
-    height: 430px;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -150,9 +142,19 @@ section.aboute .textSobre h2 {
 
 section.aboute .textSobre p {
   color: #57616d;
-  margin: 15px 0;
-  text-align: center;
+  margin: 10px 0;
+  text-align: justify;
+  padding: 5px 8px;
   font-size: 18px;
+}
+
+section.aboute .textSobre p .sobreTech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.aboute .textSobre p span {
@@ -192,7 +194,7 @@ section.aboute .textSobre p span {
 }
 
 section.tech {
-  margin: 38px auto;
+  margin: 25px auto;
   padding: 10px;
   max-width: 1280px;
 }
@@ -214,7 +216,7 @@ section.tech .containerTech {
 }
 
 section.tech .containerTech .tech-single {
-  width: calc(100% / 6);
+  width: calc(100% / 4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +231,7 @@ section.tech .containerTech .tech-single {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -344,7 +346,7 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -353,7 +355,7 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin: 20px auto;
+    margin: 50px auto;
   }
 }
 
@@ -467,7 +469,7 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
   text-decoration: none;
   margin: 0 20px;
   border: 0;
-  background-color: #444444;
+  background-color: #463785;
   padding: 7px 35px;
   border-radius: 10px;
   cursor: pointer;
@@ -478,9 +480,8 @@ section.diferenciais .container-diferenciais .box-single:nth-last-of-type(2) {
 }
 
 .containerProjetos .projetoSingle .conteudo .btnProjetos a:hover {
-  -webkit-box-shadow: inset 0 0 8px #e7e3e3;
-          box-shadow: inset 0 0 8px #e7e3e3;
-  background-color: #444444;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
@@ -505,6 +506,11 @@ footer .containerFooter .redesSociais svg {
   margin: 0 10px;
   color: white;
   font-size: 30px;
+}
+
+footer .containerFooter .redesSociais svg:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 footer .containerFooter .menu a {

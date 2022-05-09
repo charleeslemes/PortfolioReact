@@ -2,12 +2,18 @@ import './main.css';
 import { FaGithub, FaInstagram, FaLinkedin, FaBars, FaTimes, FaUser, FaDesktop, FaCode } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Conteudo from "../Conteudo";
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 export default function Main(){
     AOS.init({
         duration: 600,
         delay: 200,
     });
+
+
+    
 
 
     function abrirModalMobile(){
@@ -21,11 +27,13 @@ export default function Main(){
     function fecharModalMobile(){
         let modal = document.querySelector('.modalMenuMobile');
 
-        
         modal.style.display="none";
     }
 
+
+
     return(
+        <>
         <div className="main">
             <header>
                 <div className='logo'> <h2>Charles Lemes</h2> </div>
@@ -57,7 +65,7 @@ export default function Main(){
 
             </header>
 
-            <div className='bio1'data-aos="zoom-out-up"  >
+            <div className='bio1'data-aos="flip-left"  >
             
             <div className='img-autor'></div>
 
@@ -79,5 +87,12 @@ export default function Main(){
 
 
         </div>
+
+        
+
+        <Conteudo/>
+
+        </>
+
     )
 }

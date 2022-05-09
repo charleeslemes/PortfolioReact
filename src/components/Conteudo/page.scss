@@ -66,6 +66,8 @@ section.aboute{
             background-color: $backgroundOpacity;
             border-radius: 10px;
             margin-top: 10px;
+      
+           
 
             @media screen and (max-width: 768px){
                 margin: 10px 25px;
@@ -79,36 +81,34 @@ section.aboute{
             
         }
 
+        button:hover{
+            transform: scale(1.1);
+        }
+
     }
 
 
     .textSobre{
         padding: 10px 5px;
         width: 80%;
-        height: 250px;
+        height: 270px;
         margin: 20px 0;
         border-radius: 10px;
         box-shadow: 0 0 20px #2427724d;
         margin-right: 2%;
 
-        @media screen and (max-width: 850px){
+        @media screen and (max-width: 920px){
+            height: 330px;
+        }
+
+       
+        @media screen and (max-width: 768px){
             margin: 20px auto;
             width: 100%;
-            padding: 0 2%;
-            height: 270px;
+            height: auto;
         }
 
-        @media screen and (max-width: 768px){
-            height: 310px;
-        }
-
-        @media screen and (max-width: 510px){
-            height: 410px;
-        }
-
-        @media screen and (max-width: 410px){
-            height: 450px;
-        }
+        
 
 
        
@@ -134,11 +134,19 @@ section.aboute{
 
         p{
             color:#57616d;
-            margin: 15px 0;
-            text-align: center;
+            margin: 10px 0;
+            text-align: justify;
+            padding: 5px 8px;
             font-size: 18px;
 
+            .sobreTech{
+                display: flex;
+                justify-content: center;
+            }
+
+           
             span{
+               
                 padding: 4px 15px;
                 background-color: #444444;
                 margin-right: 8px;
@@ -149,6 +157,7 @@ section.aboute{
             }
 
          }
+
 
     }
 
@@ -165,7 +174,7 @@ section.aboute{
 
 
 section.tech{
-    margin: 38px auto;
+    margin: 25px auto;
     padding: 10px;
     max-width: 1280px;
 
@@ -175,10 +184,10 @@ section.tech{
         width: 100%;
 
         .tech-single{
-            width: calc(100% / 6);
+            width: calc(100% / 4);
             @include center(center);
             flex-direction: column;
-            margin-top: 10px;
+            margin-top: 30px;
 
             @media screen and (max-width: 768px ){
                 width: calc(100% / 3);
@@ -276,135 +285,7 @@ margin-bottom: 100px;
 }
 
 
-.containerProjetos{
-    width: 100%;
-    margin: 40px auto;
-    max-width: 1230px;
-    padding: 0 3%;
 
-    .projetoSingle{
-       display: flex;
-       width: 100%;
-       margin-bottom: 20px;
-
-
-       @media screen and (max-width: 1100px){
-           flex-direction: column !important;
-           margin: 20px auto;
-           
-
-       }
-    
-
-       .img{
-           
-           background-position:center;
-           background-size: cover;
-           width: 60%;
-           padding-top: 21%;
-           border-radius: 20px;
-           box-shadow: 0 0 30px #7e92ac;
-           margin: 0 20px;
-
-           @media screen and (max-width: 1100px){
-               margin: 0 auto;
-               padding-top: 25%;
-            width: 80%;
- 
-            }
-
-            @media screen and (max-width:768px){
-                margin: 0 auto;
-                padding-top: 40%;
-                width: 95%;
-  
-             }
-
-             @media screen and (max-width:505px){
-                margin: 0 auto;
-                padding-top: 45%;
-                width: 100%;
-  
-             }
-     
-       }
-
-
-       .conteudo{
-           width: 40%;
-            margin: 0 auto;
-           max-width: 400px;
-
-           @media screen and (max-width: 1100px){
-            width: 70%;
-            max-width: 800px;
-            }
-
-            
-           @media screen and (max-width: 768px){
-            width: 85%;
-            max-width: 800px;
-            }
-
-
-
-           h2{
-               margin: 20px;
-               text-align: center;
-               margin-bottom: 20px;
-               text-transform: uppercase;
-           }
-
-           p{
-             text-align: justify;
-             color: #57616d;
-             font-size: 18px;
-           }
-
-           .projetoTech{
-               @include center(center);
-                margin-bottom: 25px;
-               span{
-                   padding: 4px 15px;
-                   background-color: #444444;
-                   margin-right: 8px;
-                   text-align: center;
-                   margin-top: 10px;
-                   border-radius: 10px;
-                   color: white;
-                   text-transform: uppercase;
-
-               }
-           }
-
-           .btnProjetos{
-               
-               @include center(center);
-
-               a{
-                   text-decoration: none;
-                   margin: 0 20px;
-                   border: 0;
-                   background-color: #444444;
-                   padding: 7px 35px;
-                   border-radius: 10px;
-                   cursor: pointer;
-                   color:white;
-                   font-size: 20px;
-                   transition: .3s all;
-
-                   &:hover{
-                       box-shadow: inset 0 0 8px rgb(231, 227, 227);
-                       background-color: #444444;
-                   }
-               }
-           }
-
-       }
-
-    }
-
-}
 
 
 
@@ -420,6 +301,10 @@ footer{
                 margin: 0 10px;
                 color:white;
                 font-size: 30px;
+                &:hover{
+                    transform: scale(1.3);
+                
+                }
             }
         }
 

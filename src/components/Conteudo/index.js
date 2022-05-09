@@ -3,22 +3,22 @@ import {FaUser,FaCogs, FaDesktop, FaLinkedin, FaGithub} from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import Timeline from '../Timeline';
+
+import Projetos from '../Projetos';
+
+
 import html from '../../assets/logo-html.png';
 import css from '../../assets/logo-css.png';
 import javascript from '../../assets/logo-js.png';
 import jquery from '../../assets/logo-jquery.png';
 import react from '../../assets/logo-react.png';
 import sass from '../../assets/logo-sass.png';
+import git from '../../assets/logo-git.png';
+import node from '../../assets/logo-node.png';
+
 import tag from '../../assets/tag.png';
-import geradorSenha from '../../assets/projeto-senha.jpg';
-import appTarefas from '../../assets/projeto-appTarefas.jpg'
-import pokedex from '../../assets/projeto-pokedex.jpg';
-import telaLogin from '../../assets/projeto-telaLogin.jpg';
-import cronometro from '../../assets/projeto-cronometro.jpg';
-import galeriaFilmes from '../../assets/projeto-galeriaFilmes1.jpg';
-import repos from '../../assets/projeto-repositorios.jpg';
-import telaLogin02 from '../../assets/projeto-telaLogin02.jpg';
-import landingPage from '../../assets/projeto-landingPage.jpg';
+
 
 
 import { useState } from 'react';
@@ -34,13 +34,14 @@ export default function Page(){
 
     const [icon, setIcon] = useState(<FaUser/>);
 
-    const [textSobre, setTextSobre] = useState("Sou apaixonado por tecnologia, criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
+    const [textSobre, setTextSobre] = useState("Sou apaixonado por tecnologia, desde criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, daí quando entrei na faculdade de análise, comecei a conhecer o mundo de desenvolvimento, tive muita dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, daí quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais, dei também início recentemente em um curso de Node js e mongoDb, para isso também entender mais a parte de back-end.");
 
     function abrirSobreMim(){
         let sobreMim = document.querySelector('.textSobreMim');
         let sobreSite = document.querySelector('.textSobreSite');
         let btnSite = document.querySelector('.site');
         let btnMim = document.querySelector('.mim');
+      
 
 
         sobreMim.style.display="block";
@@ -52,9 +53,10 @@ export default function Page(){
         btnMim.style.boxShadow="inset 0 0 5px rgb(209, 208, 208)";
         btnSite.style.boxShadow="none";
 
+
         setTitleText("Sobre Mim");
 
-        setTextSobre("Sou apaixonado por tecnologia, criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, dai quando entrei na faculdade de analise, comecei a conhecer o mundo de desenvolvimento, tive muito dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, dai quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais.");
+        setTextSobre("Sou apaixonado por tecnologia, desde criança sempre interessei por computadores, e sempre tive tinha muitas dúvidas principalmente como era desenvolvido um site, mas nunca pesquisei muito sobre, daí quando entrei na faculdade de análise, comecei a conhecer o mundo de desenvolvimento, tive muita dificuldade no começo, mas passando o tempo e sempre me esforçando para aprender e entender a lógica fui evoluindo, passei por desenvolvimento de software para desktop, daí quando cheguei na parte de desenvolvimento web gostei muito, agora eu estudo muito a parte de front-end para evoluir cada vez mais e mais, dei também início recentemente em um curso de Node js e mongoDb, para isso também entender mais a parte de back-end.");
 
 
         setIcon(<FaUser/>);
@@ -68,6 +70,7 @@ export default function Page(){
         let sobreSite = document.querySelector('.textSobreSite');
         let btnSite = document.querySelector('.site');
         let btnMim = document.querySelector('.mim');
+        let btnSaibaMaisSobre = document.querySelector('.SaibaMaisSobre');
 
         sobreMim.style.display="none";
         sobreSite.style.display="block";
@@ -77,10 +80,11 @@ export default function Page(){
 
         btnSite.style.boxShadow="inset 0 0 5px rgb(209, 208, 208)";
         btnMim.style.boxShadow="none";
+
      
        setTitleText("Sobre o Site");
 
-       setTextSobre("Na construção deste site passei por várias dificuldades e ideias, mas sempre pesquisando como eu poderias melhorá-lo e deixando mais minha cara e sempre priorizando o design responsivo, foram vários testes para deixar 100% responsivo");
+       setTextSobre("Na construção deste site passei por várias dificuldades e ideias, mas sempre pesquisando como eu poderias melhorá-lo e deixando mais minha cara e sempre priorizando o design responsivo, foram vários testes para deixar 100% responsivo, utilizei para fazer esse site react js para estilização usei o pré-processador sass usei também o react-router-dom para fazer as rotas e usei o material ui para fazer a timeline de certificados.");
 
        setIcon(<FaDesktop/>);
 
@@ -90,6 +94,7 @@ export default function Page(){
 
     return(
         <>
+       
 
     <a name="sobre"></a>
     <section className='aboute' data-aos="fade-right">
@@ -103,8 +108,8 @@ export default function Page(){
             {icon}
             <h2>{titleText}</h2>
             
-         <p className='textSobreMim'>{textSobre}</p>
-         <p className='textSobreSite'>{textSobre} <br/> <br/> <span>React</span> <span>Sass</span></p>
+         <p className='textSobreMim'>{textSobre} </p>
+         <p className='textSobreSite'>{textSobre} <br/> <br/> <div className='sobreTech'><span>React</span> <span>Sass</span> <span>Material ui</span> </div></p>
 
         </div>
           
@@ -119,47 +124,75 @@ export default function Page(){
 
                 <div className='tech-single'>
                     <div className='img-tech'>
-                      <img src={html}/>
+                      <img src={html} alt="HTML, linguegem de marcação"/>
                     </div>
                     <h5>html</h5>
                 </div>
 
                 <div className='tech-single'>
                     <div className='img-tech'>
-                    <img src={css}/>
+                    <img src={css} alt="CSS, folha de estilização"/>
                     </div>
                     <h5>css</h5>
                 </div>
 
                 <div className='tech-single'>
                     <div className='img-tech'> 
-                      <img src={javascript}/>
+                      <img src={javascript} alt="JAVASCRIPT, linguegem de programação"/>
                     </div>
                     <h5>javaScript</h5>
                 </div>
 
                 <div className='tech-single'>
                     <div className='img-tech'>
-                    <img src={jquery}/>
+                    <img src={jquery} alt="JQUERY, é um bibloteca do javascript"/>
                     </div>
                     <h5>jquery</h5>
                 </div>
 
                 <div className='tech-single'>
                     <div className='img-tech'>
-                    <img src={react}/>
+                    <img src={react} alt="REACT JS, é um framework do javascript"/>
                     </div>
                     <h5>react js</h5>
                 </div>
 
                 <div className='tech-single'>
                     <div className='img-tech'>
-                    <img src={sass}/>
+                    <img src={sass} alt="SASS, é um pré-processador do css"/>
                     </div>
                     <h5>sass</h5>
                 </div>
+
+                <div className='tech-single'>
+                    <div className='img-tech'>
+                    <img src={node} alt="NODE JS, é usado para o back-end"/>
+                    </div>
+                    <h5>Node js</h5>
+                </div>
+
+
+                <div className='tech-single'>
+                    <div className='img-tech'>
+                    <img src={git} alt="GIT, é uma ferramenta para versionamento de código"/>
+                    </div>
+                    <h5>Git</h5>
+                </div>
+
+         
+
+              
             </div>
-        </section>
+            </section>
+            
+
+            <div className='title'>
+            <h1>Certificados</h1>
+            </div>
+            <section className='timeline_certificados'>
+                <Timeline/>
+            </section>
+
 
 
         <div className='title'>
@@ -211,243 +244,12 @@ export default function Page(){
             <h1>Projetos</h1>
         </div>
 
-            <div  className='containerProjetos'>
+        <Projetos/>
 
-                <div className='projetoSingle' data-aos="fade-down" >
-                    <div style={{backgroundImage: `url(${geradorSenha})`}}  className='img'></div>
-
-                    <div  className='conteudo'>
-                        <h2>Gerador de senha</h2>
-
-                        <p>Este projeto serve para dificultar uma senha simples, o intuito desse projeto foi eu aprender manipular uma string assim melhorando minha lógica. </p>
-
-                        <div className='projetoTech'>
-                            <span>Html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://senharandom.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/senhaRendom'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${appTarefas})`}} className='img'></div>
-
-                    <div className='conteudo'>
-                        <h2>App de tarefas</h2>
-
-                        <p>Este projeto eu utilizo as hooks, este projeto ele salva as suas tarefas no navegador então mesmo que atualize ou saia da página suas tarefas sempre estarão ali salvas no navegador, podendo clicar nelas para riscar as que você já executou.  </p>
-
-                        <div className='projetoTech'>
-                            <span>react js</span>
-                            <span>css</span>
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://apptarefas.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/appTarefa'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div className='projetoSingle' data-aos="fade-down" >
-                    <div style={{backgroundImage: `url(${pokedex})`}}  className='img'></div>
-
-                    <div  className='conteudo'>
-                        <h2>Pokedex</h2>
-
-                        <p>Neste projeto usei as APi para trazer as informações do Pokémon e assim montar uma pokedex, podendo colocar o número de Pokémon que você quer ver, sempre começando dos Pokémon iniciais.  </p>
-
-                        <div className='projetoTech'>
-                            <span>Html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://pokedex01.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/Pokedex'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${telaLogin})`}} className='img'></div>
-
-                    <div className='conteudo'>
-                        <h2>Tela login</h2>
-
-                        <p>Este projeto é uma tela de login que estou validando os campos então se digitar o e-mail ou a senha incorretamente do que é para digitar ele vai dá um erro.  </p>
-
-                        <div className='projetoTech'>
-                            <span>html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                            <span>jquery</span>
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-
-                            <a target="_blank" href='https://github.com/charleeslemes/telaLogin'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${cronometro})`}}  className='img'></div>
-
-                    <div  className='conteudo'>
-                        <h2>cronômetro</h2>
-
-                        <p>Para fazer esse cronometro utilizei as state do react, cronometro podendo pausar quando quiser e podendo limpar também para começar de novo  </p>
-
-                        <div className='projetoTech'>
-                            <span>React js</span>
-                            <span>css</span>
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://cronometro99.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/Cronometro'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${galeriaFilmes})`}} className='img'></div>
-
-                    <div className='conteudo'>
-                        <h2>Gáleria de filmes</h2>
-
-                        <p>Este projeto utilizei o axios para utilizar a API para pegar a lista dos filmes e o router-dom para fazer as rotas da minha página, essa aplicação ela traz a sinopse dos filmes, podendo salva-las para ver depois e excluir também.   </p>
-
-                        <div className='projetoTech'>
-                            <span>React js</span>
-                            <span>css</span>
-                            <span>axios</span>
-                            
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-                            
-                            <a target="_blank" href='https://galeriafilmes.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/galeriaFilmes'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <div className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${repos})`}}  className='img'></div>
-
-                    <div  className='conteudo'>
-                        <h2>Repositórios</h2>
-
-                        <p>Neste projeto utilizei a o axios para utilizar a API para pegar os repositórios do GitHub, usei também o styled components para estilizar o projeto, esse projeto ele serve para favorita seus repositórios do GitHub podendo ver o dono do repositório e a suas issues, esse projeto conta também com um sistema de paginação e filtros, podendo pega issues abertas, fechadas e todas.   </p>
-
-                        <div className='projetoTech'>
-                            <span>React js</span>
-                            <span>styled components</span>
-                            <span>axios</span>
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://repositoriosgit.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/Repositorios'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-                
-                <div  style={{flexDirection:"row-reverse"}} className='projetoSingle' data-aos="fade-down"  >
-                    <div style={{backgroundImage: `url(${telaLogin02})`}} className='img'></div>
-
-                    <div className='conteudo'>
-                        <h2>Tela login e cadastro</h2>
-
-                        <p>Este projeto é um tela de login com cadastro de usuário, tendo as validações de campos necessárias de email e senha.  </p>
-
-                        <div className='projetoTech'>
-                            <span>html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                            
-                            
-                        </div>
-
-                        <div className='btnProjetos'>
-                            
-                            <a target="_blank" href='https://galeriafilmes.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/galeriaFilmes'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div className='projetoSingle' data-aos="fade-down" >
-                    <div style={{backgroundImage: `url(${landingPage})`}}  className='img'></div>
-
-                    <div  className='conteudo'>
-                        <h2>Landing page</h2>
-
-                        <p>Está é uma landing page totalmente resposiva. </p>
-                        <div className='projetoTech'>
-                            <span>html</span>
-                            <span>css</span>
-                            <span>javascript</span>
-                            <span>jquery</span>
-
-                        </div>
-
-                        <div className='btnProjetos'>
-                            <a target="_blank" href='https://agenciabold01.netlify.app/'>Visualizar</a>
-                            <a target="_blank" href='https://github.com/charleeslemes/landingPage'>Código</a>
-                         
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>    
+        {/* adicionar os projetos aqui */}
+  
         </section>
+
 
 
         <footer>

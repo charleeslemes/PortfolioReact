@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAA;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAGhB;;AAED,AAAA,YAAY,CAAC,KAAK,CAAA;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "pdfs.scss"
+    ],
+    "names": [],
+    "file": "pdfs.css"
+}

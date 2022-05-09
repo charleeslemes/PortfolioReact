@@ -1,11 +1,13 @@
-import Home from "./components/Home";
-import Conteudo from "./components/Conteudo";
+import React from 'react';
+import Router from './router';
 
 export default function App(){
   return(
     <>
-      <Home/>
-      <Conteudo/>
+
+      <Router/>
+     
+      
     </>
   )
 }
