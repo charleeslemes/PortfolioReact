@@ -8,7 +8,7 @@ import repos from '../../assets/projeto-repositorios.jpg';
 import telaLogin02 from '../../assets/projeto-telaLogin02.jpg';
 import landingPage from '../../assets/projeto-landingPage.jpg';
 
-
+import './projetos.css';
 
 
 
